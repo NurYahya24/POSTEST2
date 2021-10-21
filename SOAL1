@@ -1,0 +1,41 @@
+#Nama   = Nur Yahya
+#Nim    = 2109106073
+print("""  KALKULATOR KONVERSI MATA UANG
+=================================""")
+#nilai uang bisa sewaktu-waktu berubah dan harus diperbarui
+usd = 0.000071
+sgd = 0.000095
+eur = 0.000061
+jpy = 0.0081
+#menu refernsi stackoverflow
+menu = {}
+menu['1'] = "Konversi ke USD"
+menu['2'] = "Konversi ke SGD"
+menu['3'] = "Konversi ke EUR"
+menu['4'] = "Konversi ke JPY"
+menu['5'] = "Keluar"
+while True:
+    idr = int(input("Masukkan Nilai Rupiah : Rp. "))
+    options=menu.keys()
+    for entry in options:
+        print (entry, menu[entry])
+    pilih=input("Pilih mata uang : ")
+    idus = idr * usd
+    idsg = idr * sgd
+    ideu = idr * eur
+    idjp = idr * jpy
+    
+    if pilih == '1':
+        print("USD %.2f" %idus)
+    elif pilih == '2' :
+        print("SGD %.2F" %idsg)
+    elif pilih == '3' :
+        print("EUR %.2f" %ideu)
+    elif pilih == '4' :
+        print("JPY %.2f" %idjp)
+    elif pilih == '5' :
+        print("""          Terima Kasih
+=================================""")
+        break
+    else :
+        print("Pilihan Tidak Tersedia!!")
