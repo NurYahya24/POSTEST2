@@ -1,0 +1,11 @@
+#Dictionary sederhana biodata
+biodata = {'Nama': 'Nur Yahya', 'NIM' : 2109106073, 'Kelas': 'B', 'TB' : 162.0, 'Umur' : 20, 'sma' : 'SMAN1 Tenggarong', 'hobby': 'Main Game'}
+
+print("Biodata Mahasiswa")
+print("Nama             :" + biodata['Nama'])
+print("NIM              :%d" %biodata['NIM'])
+print("Kelas            :" + biodata['Kelas'])
+print("Tinggi Badan     :%.2f" %biodata['TB'])
+print("Umur             :%d" %biodata['Umur'])
+print("Asal Sekolah     :" + biodata['sma'])
+print("Hobby            :" + biodata['hobby'])
